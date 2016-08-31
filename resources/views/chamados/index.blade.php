@@ -1,6 +1,9 @@
 @extends('layout._layout')
 @section('content')
     <h3>Cadastro de Chamados</h3>
+    @if (isset($status))
+        @include('save_ok')
+    @endif
     <hr />
     {{ Form::open(array('route' => 'chamados.save', 'role'=>'form', 'id' =>'form1','name' =>'form1' )) }}
     {{ Form::hidden('id', '0') }}
