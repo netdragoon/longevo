@@ -1,0 +1,16 @@
+.car-label-full {
+	width:446px;float:left;
+}
+.car-label-first {
+	width:264px;float:left;
+}
+.car-label-second {
+	width:182px;float:left;
+}
+
+.mail-label-first {
+	margin:0 0 0 0;padding:0 0 0 0;height:21px;width:454px;
+}
+.mail-label-second {	
+	margin:0 0 0 0;padding:0 0 0 0;height:21px;width:436px;
+}

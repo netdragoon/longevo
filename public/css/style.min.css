@@ -1,0 +1,160 @@
+.left{float:left;}
+.right{float:right;}
+.clear{clear:both;}
+.hide{display:none;}
+.show{display:block;}
+@font-face{font-family:'HelveticaNeue77BoldCondensed';src:url('../fonts/helveticaneue-boldcond-webfont.eot');src:url('../fonts/helveticaneue-boldcond-webfont.eot?#iefix') format('embedded-opentype'),url('../fonts/helveticaneue-boldcond-webfont.woff') format('woff'),url('../fonts/helveticaneue-boldcond-webfont.ttf') format('truetype'),url('../fonts/helveticaneue-boldcond-webfont.svg#HelveticaNeue77BoldCondensed') format('svg');font-weight:normal;font-style:normal;}body{background:#f6f6f6 url('../img/layout/bg-body.gif') top left repeat-x;font:14px Arial,Helvetica,sans-serif;line-height:1.6em;margin:0;padding:0;}body a,body a:hover{text-decoration:none;}
+body img{border:0;}
+#main{background:#FFF;width:980px;margin:20px auto;display:block;}#main header{height:130px;width:980px;margin:0 0 10px 0;display:block;}#main header section{float:left;}#main header section.logo{width:399px;height:51px;margin:22px 0 0 30px;}
+#main header section.atendimento{background:url('../img/layout/bg-atendimento.jpg') top left no-repeat;width:269px;height:49px;color:#FFF;text-align:center;padding:3px 0 0 30px;margin:22px 0 22px 30px;}#main header section.atendimento h2{font-size:14px;margin:0;padding:0;}
+#main header section.atendimento p{font-size:12px;margin:0;padding:0;}
+#main header section.acompanhe{width:156px;height:46px;margin:28px 0 0 15px;}#main header section.acompanhe a{float:left;}#main header section.acompanhe a h2{font-size:14px;color:#707070;margin:4px 0 0 10px;line-height:16px;}
+#main header nav{clear:both;background:url('../img/layout/bg-nav.jpg') top left repeat-x;width:950px;height:35px;margin:0 auto;display:block;}#main header nav ul{list-style:none;padding:0;line-height:35px;}#main header nav ul li{float:left;border-left:1px solid #333333;border-right:1px solid #252525;}#main header nav ul li a{color:#FFF;font-weight:bold;font-size:12px;height:35px;padding:0 18px;display:block;}#main header nav ul li a:hover,#main header nav ul li a.selected{background:url('../img/layout/bg-nav-hover.jpg') top left repeat-x;}
+#main header nav ul li.first-child{border-left:none;}
+#main header nav ul li.last-child{border-right:none;margin-right:12px;}
+#main header nav form{padding:5px 0 0 0;}#main header nav form input[type="text"]{float:left;width:67px;height:24px;line-height:24px;background:#FFF;padding:0 8px;border:none;}
+#main header nav form input[type="submit"]{float:left;background:url('../img/layout/bg-btn-buscar.jpg') left top no-repeat;width:28px;height:24px;border:none;overflow:hidden;}#main header nav form input[type="submit"]:hover{background:url('../img/layout/bg-btn-buscar.jpg') bottom left no-repeat;cursor:pointer;}
+#main #container section.banner{width:950px;height:370px;display:block;background:#232323;margin:10px auto 15px auto;position:relative;overflow:hidden;}#main #container section.banner #runTitle{top:0;right:0;position:absolute;z-index:9998;width:290px;height:315px;padding:14px 20px;}#main #container section.banner #runTitle a h1{color:#FFF;font-weight:bold;font-size:36px;line-height:45px;margin:0;padding:0;}#main #container section.banner #runTitle a h1:hover{color:#dc2b2c;}
+#main #container section.banner #runTitle a h2{color:#dc2b2c;font-size:14px;font-weight:normal;margin:10px 0 0 0;padding:0;}#main #container section.banner #runTitle a h2:hover{color:#FFF;}
+#main #container section.banner #runTitle p a{color:#7c7c7c;}#main #container section.banner #runTitle p a:hover{color:#FFF;}
+#main #container section.banner #navSlider{position:absolute;right:10px;bottom:15px;z-index:9997;}#main #container section.banner #navSlider a{float:left;color:#838383;height:12px;width:12px;text-align:center;margin:0 5px 0 0;background:#838383;font-size:1px;-moz-border-radius:10px;-webkit-border-radius:10px;border-radius:10px;behavior:url(PIE.php);}#main #container section.banner #navSlider a.activeSlide{background:#910304;color:#910304;}
+#main #container section.banner #navSlider a:hover{text-decoration:none;}
+#main #container section.banner #runCycle{top:0;left:0;position:absolute;z-index:9996;width:620px;height:370px;}#main #container section.banner #runCycle img{display:none;}
+#main #container section.modBox1{float:left;width:316px;height:222px;margin:0 16px 0 0;display:block;}#main #container section.modBox1 h1{background:#b41213;color:#FFF;width:316px;height:55px;margin:0;text-indent:-9999em;overflow:hidden;}#main #container section.modBox1 h1.tServicos{background:url('../img/layout/t-servicos.jpg') left top no-repeat;}
+#main #container section.modBox1 h1.tAgendamento{background:url('../img/layout/t-agendamento.jpg') left top no-repeat;}
+#main #container section.modBox1 h1.tVendasEspeciais{background:url('../img/layout/t-vendasespeciais.jpg') left top no-repeat;}
+#main #container section.modBox1 p,#main #container section.modBox1 a{padding:0 17px;}
+#main #container section.modBox1 p{font-size:16px;}
+#main #container section.modBox1 a{background:url('../img/layout/bg-btn-saibaMais.jpg') left top no-repeat;font-size:12px;font-weight:bold;width:124px;height:34px;line-height:34px;display:block;color:#FFF;margin:0 20px;}#main #container section.modBox1 a:hover{background:url('../img/layout/bg-btn-saibaMais.jpg') bottom left no-repeat;cursor:pointer;}
+#main #container section.last{margin:0;}
+#main #container section.servicos{background:#ffffff url('../img/layout/bg-servicos.jpg') bottom left no-repeat;}
+#main #container section.agendamento{background:#ffffff url('../img/layout/bg-agendamento.jpg') bottom left no-repeat;}
+#main #container section.vendasespeciais{background:#ffffff url('../img/layout/bg-vendasespeciais.jpg') bottom left no-repeat;}
+#main #container section.modBox2{clear:both;float:left;display:block;width:316px;height:543px;background:#FFF;margin:0 0 16px 0;}#main #container section.modBox2 h1{font-size:20px;color:#910304;border-bottom:1px solid #CCC;padding:0 20px 16px 20px;overflow:hidden;margin:20px 0 0 0;}#main #container section.modBox2 h1 span{color:#525252;}
+#main #container section.modBox2 ul{list-style:none;margin:0;padding:0;}#main #container section.modBox2 ul li{padding:0 20px;border-bottom:1px solid #e6e6e6;margin:15px 0 0 0;height:95px;}#main #container section.modBox2 ul li img{float:left;margin:0 10px 0 0;}
+#main #container section.modBox2 ul li span{font-size:11px;color:#a5a5a5;}
+#main #container section.modBox2 ul li p{margin:0;font-size:12px;font-weight:bold;line-height:18px;}#main #container section.modBox2 ul li p a{color:#910304;}#main #container section.modBox2 ul li p a:hover{color:#000;}
+#main #container section.modBox2 .linkMais{background:url('../img/layout/linkMais.jpg') right 1px no-repeat;font-weight:bold;color:#262626;margin:8px 10px 0 0;padding:0 24px 0 0;display:block;text-align:right;}#main #container section.modBox2 .linkMais:hover{color:#910304;}
+#main #container section.modBox3{float:left;display:block;width:316px;height:208px;background:#FFF;margin:0 0 16px 16px;}#main #container section.modBox3 h1{float:left;background:#f2f2f2;padding:0 0 0 15px;border-left:4px solid #b41213;font-size:14px;width:285px;}
+#main #container section.modBox3 span{float:right;margin:0 10px 0 0;}#main #container section.modBox3 span a{color:#000;font-size:12px;font-weight:bold;text-decoration:underline;}#main #container section.modBox3 span a:hover{color:#910304;}
+#main #container section.modBox3 a img{padding:0 20px;}
+#main #container section.modBox3 p{padding:0 20px;margin:0;line-height:18px;}#main #container section.modBox3 p a{color:#000;font-size:12px;}#main #container section.modBox3 p a:hover{color:#910304;}
+#main #container section.modBox4{float:left;margin:0 0 0 16px;}
+#main #container section.modBox5{clear:both;float:left;display:block;background:#FFF;width:980px;height:256px;margin:0 0 16px 0;}#main #container section.modBox5 div.titulo{overflow:hidden;border-bottom:1px solid #b7b7b7;margin:0 0 8px 0;}#main #container section.modBox5 div.titulo h1{float:left;font-size:20px;color:#910304;padding:0 20px 16px 20px;overflow:hidden;margin:18px 0 0 0;}#main #container section.modBox5 div.titulo h1 span{color:#525252;}
+#main #container section.modBox5 div.titulo .linkMais{background:url('../img/layout/linkMais.jpg') right 1px no-repeat;font-weight:bold;color:#262626;margin:20px 10px 0 0;padding:0 24px 0 0;display:block;text-align:right;}#main #container section.modBox5 div.titulo .linkMais:hover{color:#910304;}
+#main #container section.modBox5 div.slideshow{width:928px;margin:0 0 0 20px;}
+#main #container section.modBox5 div.nav{border-bottom:none;}#main #container section.modBox5 div.nav span{width:70px;height:30px;line-height:30px;font-size:12px;}#main #container section.modBox5 div.nav span.anterior{float:left;margin-left:20px;}#main #container section.modBox5 div.nav span.anterior a{font-weight:bold;color:#000;}#main #container section.modBox5 div.nav span.anterior a:hover{text-decoration:underline;}
+#main #container section.modBox5 div.nav span.proximo{float:left;margin-right:20px;}#main #container section.modBox5 div.nav span.proximo a{font-weight:bold;color:#000;}#main #container section.modBox5 div.nav span.proximo a:hover{text-decoration:underline;}
+#main #container section.modBox5 div.nav #pager{float:left;text-align:center;width:800px;height:30px;margin:0;padding:0;display:block;border-bottom:none;}#main #container section.modBox5 div.nav #pager span{color:#DDD;cursor:pointer;display:inline-block;font-size:55px;height:17px;width:17px;margin:0 2px 0 0;}#main #container section.modBox5 div.nav #pager span.cycle-pager-active{color:#910304;}
+#main .container-internas{padding:10px 20px 20px 20px;display:block;min-height:380px;}#main .container-internas h1{font-size:20px;color:#910304;border-bottom:1px solid #CCC;padding:0 0 12px 0;margin:0 0 20px 0;}#main .container-internas h1 span{color:#525252;}
+#main .container-internas.empresa img{float:left;margin:0 20px 0 0;}
+#main .container-internas.empresa a{width:120px;float:left;display:block;color:#c9c5b0;margin:0 20px 0 0;}#main .container-internas.empresa a.last-child{margin-right:0;}
+#main .container-internas.empresa a img{float:left;display:block;padding:2px;background:#c9c9c9;margin-right:10px;}
+#main .container-internas.empresa .uparrowdiv1,#main .container-internas.empresa .uparrowdiv2,#main .container-internas.empresa .uparrowdiv3,#main .container-internas.empresa .uparrowdiv4,#main .container-internas.empresa .uparrowdiv5{display:none;width:910px;min-height:140px;background:#f8f8f8;color:#474747;padding:5px 5px 5px 20px;position:relative;overflow:hidden;margin:0;border:2px solid #e4e4e4;}#main .container-internas.empresa .uparrowdiv1 p,#main .container-internas.empresa .uparrowdiv2 p,#main .container-internas.empresa .uparrowdiv3 p,#main .container-internas.empresa .uparrowdiv4 p,#main .container-internas.empresa .uparrowdiv5 p{width:915px;float:left;font-size:12px;margin:5px 0px 25px 0;color:#474747;}
+#main .container-internas.empresa .uparrowdiv1 span,#main .container-internas.empresa .uparrowdiv2 span,#main .container-internas.empresa .uparrowdiv3 span,#main .container-internas.empresa .uparrowdiv4 span,#main .container-internas.empresa .uparrowdiv5 span{background:#ececec;border:1px solid #d9d9d9;padding:10px 15px;font-weight:bold;font-size:18px;margin:20px 20px 0 0;}#main .container-internas.empresa .uparrowdiv1 span.tel,#main .container-internas.empresa .uparrowdiv2 span.tel,#main .container-internas.empresa .uparrowdiv3 span.tel,#main .container-internas.empresa .uparrowdiv4 span.tel,#main .container-internas.empresa .uparrowdiv5 span.tel{background:url('../img/layout/icon-telefone.jpg') 12px 8px no-repeat;padding-left:44px;}
+#main .container-internas.empresa .uparrowdiv1 span.email,#main .container-internas.empresa .uparrowdiv2 span.email,#main .container-internas.empresa .uparrowdiv3 span.email,#main .container-internas.empresa .uparrowdiv4 span.email,#main .container-internas.empresa .uparrowdiv5 span.email{background:url('../img/layout/icon-email.jpg') 12px 12px no-repeat;padding-left:46px;}
+#main .container-internas.empresa .triangles1,#main .container-internas.empresa .triangles2,#main .container-internas.empresa .triangles3,#main .container-internas.empresa .triangles4,#main .container-internas.empresa .triangles5{display:none;width:0px;height:0;border-style:solid;border-width:15px;}
+#main .container-internas.empresa .triangles1{margin:130px 0 0 48px;border-color:#FFF #FFF #e4e4e4 #FFF;}
+#main .container-internas.empresa .triangles2{margin:130px 0 0 185px;border-color:#FFF #FFF #e4e4e4 #FFF;}
+#main .container-internas.empresa .triangles3{margin:130px 0 0 322px;border-color:#FFF #FFF #e4e4e4 #FFF;}
+#main .container-internas.empresa .triangles4{margin:130px 0 0 464px;border-color:#FFF #FFF #e4e4e4 #FFF;}
+#main .container-internas.empresa .triangles5{margin:130px 0 0 604px;border-color:#FFF #FFF #e4e4e4 #FFF;}
+#main .container-internas.veiculos .esq{float:left;width:420px;padding:0;}#main .container-internas.veiculos .esq div{padding:0;}
+#main .container-internas.veiculos .esq .imgPrincipal{border:1px solid #dedede;padding:5px;margin:0 0 15px 0;width:388px;}
+#main .container-internas.veiculos .esq .listaGaleria{list-style:none;}#main .container-internas.veiculos .esq .listaGaleria li{float:left;border:none;padding:0;margin:0 13px 0 0;}
+#main .container-internas.veiculos .dir{float:right;width:520px;padding:0;}#main .container-internas.veiculos .dir .compartilhe{display:block;width:520px;height:30px;font-size:12px;font-weight:bold;background:#f8f8f8;border:1px solid #e7e7e7;margin:0;padding:0;}#main .container-internas.veiculos .dir .compartilhe .divCompartilhe{float:right;padding:7px 10px 0 0;background:none;}#main .container-internas.veiculos .dir .compartilhe .divCompartilhe .text{float:left;padding:0 10px 0 0;line-height:16px;}
+#main .container-internas.veiculos .dir h2{font:bold 28px Arial;background:none;margin:8px 0 10px 0;padding:0 0 10px 0;width:520px;border-bottom:1px solid #ccc;}
+#main .container-internas.veiculos .dir h3{clear:both;font:bold 16px Arial;background:none;margin:20px 0 10px 0;padding:10px 0 0 0;width:520px;border-top:1px solid #ccc;}
+#main .container-internas.veiculos .dir ul{clear:both;font-weight:normal;list-style:none;width: 470px;}#main .container-internas.veiculos .dir ul li{float:left;width:235px;}#main .container-internas.veiculos .dir ul li.descricaoAdicional{clear:both;width:470px;margin:20px 0;}
+#main .container-internas.veiculos .dir ul li span{font-weight:bold;}
+#main .container-internas.veiculos .dir span.preco{background:#000;padding:4px 8px;color:#FFF;font-size:22px;font-weight:bold;margin:20px 0 0 0;}
+#main .container-internas.veiculos .dir form{clear:both;}#main .container-internas.veiculos .dir form fieldset{border:none;padding:0;}#main .container-internas.veiculos .dir form fieldset label{width:497px;}#main .container-internas.veiculos .dir form fieldset label input[type="text"]{float:left;width:497px;height:30px;line-height:30px;padding:0 10px;margin:0 0 10px 0;color:#000;border:1px solid #ccc;}
+#main .container-internas.veiculos .dir form fieldset label textarea{width:497px;height:100px;padding:10px;border:1px solid #ccc;}
+#main .container-internas.veiculos .dir form fieldset label input[type="button"]{background:url("../img/layout/btnEnviar1.jpg") top left no-repeat;width:179px;height:43px;border:none;color:#FFF;font-weight:bold;font-size:18px;margin:10px 0 0 0;float:right;}#main .container-internas.veiculos .dir form fieldset label input[type="button"]:hover{background:url("../img/layout/btnEnviar2.jpg") top left no-repeat;cursor:pointer;}
+#main .container-internas.veiculos .dir form fieldset label.estado{width:264px;float:left;}#main .container-internas.veiculos .dir form fieldset label.estado select{width:254px;border:1px solid #ccc;padding:6px 10px;margin:0 10px 10px 0;}
+#main .container-internas.veiculos .dir form fieldset label.cidade{width:222px;}#main .container-internas.veiculos .dir form fieldset label.cidade input[type="text"]{width:233px;height:30px;}
+#main .container-internas.veiculos .dir form fieldset label.email{width:223px;}#main .container-internas.veiculos .dir form fieldset label.email input[type="text"]{width:232px;height:30px;margin-right:10px;}
+#main .container-internas.veiculos .dir form fieldset label.telefone{width:223px;}#main .container-internas.veiculos .dir form fieldset label.telefone input[type="text"]{width:233px;height:30px;}
+#main .container-internas.veiculos .dir form fieldset label span{float:left;margin:22px 0 0 0;}
+#main .container-internas.posvenda div.modBox{float:left;background:#FFF;border:1px solid #dddddd;width:258px;height:258px;margin:0 20px 20px 0;padding:10px 20px;text-align:center;}#main .container-internas.posvenda div.modBox.last-child{margin:0 0 20px 0;}
+#main .container-internas.posvenda div.modBox.veiculo{background:#dddddd;border:1px solid #cfcfcf;}
+#main .container-internas.posvenda div.modBox a.botao{float:left;font-family:'HelveticaNeue77BoldCondensed';font-size:16px;padding:6px 0;display:block;border:1px solid #dddddd;width:90px;margin:20px 0 20px 25px;color:#000;background:#f0f0f0;}#main .container-internas.posvenda div.modBox a.botao:hover{text-decoration:none;background:#910304;color:#FFF;}
+#main .container-internas.posvenda div.modBox a.text{text-decoration:none;}
+#main .container-internas.posvenda div.modBox p a{color:#000;}#main .container-internas.posvenda div.modBox p a:hover{color:#910304;}
+#main .container-internas.posvenda div.modBox h1{font-family:'HelveticaNeue77BoldCondensed';font-size:25px;line-height:28px;width:215px;margin:0 auto;padding:0;color:#000;border:none;}
+#main .container-internas.posvenda div.internas h2{clear:both;font-size:16px;padding:0 0 4px 0;margin:30px 0 10px 0;border-bottom:1px solid #ededed;}#main .container-internas.posvenda div.internas h2.subtitulo{color:#910304;}
+#main .container-internas.posvenda div.internas img{float:left;margin:0 40px 0 20px;width:215px;border:1px solid #eaeaea;padding:0 20px;}#main .container-internas.posvenda div.internas img.subimagem{float:right;width:196px;margin:10px 0 0 0;}
+#main .container-internas.posvenda div.internas p{margin:0 0 16px 0;padding:0;}
+#main .container-internas.posvenda div.internas .linkVoltar{color:#000;font-weight:bold;margin:50px 0 0 0;display:block;}
+#main .container-internas.posvenda div.internas div{float:right;width:450px;}#main .container-internas.posvenda div.internas div ul{margin:0 0 0 16px;padding:0;display:block;}
+#main .container-internas.posvenda div.internas ul.galleryList{margin:0;padding:0;list-style:none;}#main .container-internas.posvenda div.internas ul.galleryList li{float:left;width:160px;border:1px solid #ededed;padding:5px;margin:0 10px 10px 0;}#main .container-internas.posvenda div.internas ul.galleryList li img{margin:0;padding:0;width:160px;height:107px;}
+#main .container-internas.posvenda div.internas form{clear:both;}#main .container-internas.posvenda div.internas form fieldset{border:none;padding:0;}#main .container-internas.posvenda div.internas form fieldset label{width:497px;}#main .container-internas.posvenda div.internas form fieldset label input[type="text"]{float:left;width:280px;height:30px;line-height:30px;padding:0 10px;margin:0 10px 10px 0;color:#000;border:1px solid #ccc;}
+#main .container-internas.posvenda div.internas form fieldset label textarea{width:905px;height:100px;padding:10px;border:1px solid #ccc;}
+#main .container-internas.posvenda div.internas form fieldset label input[type="button"]{background:url("../img/layout/btnEnviar1.jpg") top left no-repeat;width:179px;height:43px;border:none;color:#FFF;font-weight:bold;font-size:18px;margin:10px 8px 0 0;float:right;}#main .container-internas.posvenda div.internas form fieldset label input[type="button"]:hover{background:url("../img/layout/btnEnviar2.jpg") top left no-repeat;cursor:pointer;}
+#main .container-internas.posvenda div.internas form fieldset label span{float:left;margin:22px 0 0 0;}
+#main .container-internas.noticias ul{list-style:none;overflow:hidden;padding:0 0 0 10px;}#main .container-internas.noticias ul li{float:left;background:#FFF;border:1px solid #eaeaea;width:440px;height:100px;margin:0 30px 20px 0;}#main .container-internas.noticias ul li a img{float:left;margin:0 10px 0 0;}
+#main .container-internas.noticias ul li a h2{font-size:14px;color:#000;margin:0;}#main .container-internas.noticias ul li a h2:hover{color:#910304;}
+#main .container-internas.noticias ul li span{font-size:11px;color:#999;margin:4px 0 0 0;display:block;}
+#main .container-internas.noticias ul li.last{margin:0 0 20px 0;}
+#main .container-internas.noticias .internas h1{font-size:28px;color:#000;line-height:28px;border:none;margin:0;padding:0;}
+#main .container-internas.noticias .internas h2{font-size:16px;padding:0 0 4px 0;margin:0 0 10px 0;border-bottom:1px solid #ededed;}
+#main .container-internas.noticias .internas img{float:left;margin:0 16px 0 0;}
+#main .container-internas.noticias .internas p{margin:0 0 16px 0;padding:0;}
+#main .container-internas.noticias .internas .linkVoltar{color:#000;font-weight:bold;margin:50px 0 0 0;display:block;}
+#main .container-internas.noticias .internas .subtitulo{border-bottom:1px solid #ededed;border-top:none;border-left:none;border-right:none;display:block;width:100%;overflow:hidden;}#main .container-internas.noticias .internas .subtitulo div{border:none;}#main .container-internas.noticias .internas .subtitulo div.data{float:left;width:300px;margin:30px 0 0 0;font-size:12px;}
+#main .container-internas.noticias .internas .subtitulo div.redes{float:right;width:292px;margin:30px 0 10px 0;}#main .container-internas.noticias .internas .subtitulo div.redes div.texto{float:left;width:150px;font-size:12px;}
+#main .container-internas.noticias .internas .subtitulo div.redes div.icons{float:right;width:139px;}
+#main .container-internas.noticias .internas ul.galleryList{margin:0;padding:0;}#main .container-internas.noticias .internas ul.galleryList li{float:left;width:160px;border:1px solid #ededed;padding:5px;margin:0 10px 10px 0;}#main .container-internas.noticias .internas ul.galleryList li img{margin:0;padding:0;}
+#main .container-internas.agendamento div.titulo{font-size:26px;font-weight:bold;text-align:center;margin:20px 0 10px 0;padding:15px 0;background:#f0f0f0;}
+#main .container-internas.agendamento fieldset{margin:20px 0 0 0;border:1px solid #CCC;padding:16px;}#main .container-internas.agendamento fieldset legend{font-size:16px;font-weight:bold;margin:0 0 0 -5px;padding:0 0 0 0;}
+#main .container-internas.agendamento fieldset label{float:left;width:292px;height:30px;display:block;margin:0 10px 30px 0;font-size:12px;}#main .container-internas.agendamento fieldset label.labelMsg{height:200px;}
+#main .container-internas.agendamento fieldset label.labelObrig{font-weight:bold;font-size:12px;color:#910304;}
+#main .container-internas.agendamento fieldset input[type="text"]{width:260px;height:30px;line-height:30px;border:1px solid #cbcbcb;padding:0 12px;font-size:14px;}
+#main .container-internas.agendamento fieldset select{width:286px;border:1px solid #cbcbcb;background:#f5f5f5;padding:6px 11px;}#main .container-internas.agendamento fieldset select .indisponivel{color:#CCC;}
+#main .container-internas.agendamento fieldset.Fobservacoes{height:155px;}#main .container-internas.agendamento fieldset.Fobservacoes textarea{width:865px;height:100px;padding:12px;border:1px solid #cbcbcb;}
+#main .container-internas.agendamento button{background:#000;border:none;width:220px;height:40px;line-height:40px;overflow:hidden;color:#FFF;font-weight:bold;padding:0 18px;margin:20px auto 0 auto;display:block;font-size:16px;}#main .container-internas.agendamento button:hover{background:#14a900;cursor:pointer;}
+#main .container-internas.agendamento section.tipoAgendamento .abas span{float:left;}
+#main .container-internas.agendamento section.tipoAgendamento .abas ul{list-style:none;width:940px;height:30px;display:block;}#main .container-internas.agendamento section.tipoAgendamento .abas ul li{float:left;margin:0 0 25px 6px;}#main .container-internas.agendamento section.tipoAgendamento .abas ul li a{font-weight:bold;border:1px solid #dcdcdc;padding:8px 10px;color:#000;background:#f0f0f0;}#main .container-internas.agendamento section.tipoAgendamento .abas ul li a.selected{font-weight:bold;background:#000;padding:8px 10px;color:#FFF;}
+#main .container-internas.agendamento section.tipoAgendamento .tipoAgendamento2{clear:both;}
+#main .container-internas.consorcio div table{font-size:12px;margin:0 0 10px 0;}#main .container-internas.consorcio div table thead{background:url("../img/layout/bg-titulo.png") top left repeat-x;}#main .container-internas.consorcio div table thead tr td{padding:0 10px;height:30px;color:#FFF;}
+#main .container-internas.consorcio div table tbody{background:url("../img/layout/bg-lista.png") top left repeat-x;}#main .container-internas.consorcio div table tbody tr td{width:170px;height:30px;margin:0;padding:0 10px;}
+#main .container-internas.consorcio div table tbody tr.titulo{font-weight:bold;}
+#main .container-internas.consorcio div.esq{float:left;width:450px;}#main .container-internas.consorcio div.esq h2{color:#ea2a36;font-size:14px;margin:0;padding:0;}
+#main .container-internas.consorcio div.esq .bold{font-weight:bold;margin:20px 0 40px 0;}
+#main .container-internas.consorcio div.esq ul{list-style:none;margin:0;padding:0;}#main .container-internas.consorcio div.esq ul li{float:left;width:200px;}#main .container-internas.consorcio div.esq ul li p{margin:0;padding:0;font-size:12px;}
+#main .container-internas.consorcio div.esq img{margin:20px 0 0 0;}
+#main .container-internas.consorcio div.esq .legend{font-style:italic;font-size:12px;}
+#main .container-internas.consorcio div.dir{float:right;width:450px;}
+#main .container-internas.contato fieldset{border:none;}#main .container-internas.contato fieldset label{float:left;width:445px;height:48px;display:block;margin:0 10px 18px 0;}#main .container-internas.contato fieldset label.labelMsg{height:200px;}
+#main .container-internas.contato fieldset label.labelObrig{font-weight:bold;font-size:12px;color:#910304;}
+#main .container-internas.contato fieldset input[type="text"]{width:406px;height:48px;line-height:48px;border:1px solid #cbcbcb;background:#f5f5f5;padding:0 16px;}
+#main .container-internas.contato fieldset select{width:439px;border:1px solid #cbcbcb;background:#f5f5f5;padding:15px 11px;}
+#main .container-internas.contato fieldset textarea{width:861px;height:176px;border:1px solid #cbcbcb;background:#f5f5f5;padding:12px 16px;}
+#main .container-internas.contato fieldset button{float:right;background:url('../img/layout/btn-enviar.jpg') top left no-repeat;border:none;width:88px;height:31px;line-height:31px;overflow:hidden;color:#FFF;font-weight:bold;padding:0 18px 0 0;margin:0 4px 0 0;}#main .container-internas.contato fieldset button:hover{background:url('../img/layout/btn-enviar.jpg') bottom left no-repeat;cursor:pointer;}
+#main .container-internas.contato #list-success{background-color:#D3EDD3;border:1px solid #83D186;padding:10px 16px;list-style:none;line-height:1.6em;width:95%;display:block;line-height:18px;margin:0 0 13px 0;font-weight:bold;}#main .container-internas.contato #list-success li{float:none;width:100%;font-weight:bold;}
+#main .container-internas.contato #list-error{background-color:#FFE6E6;border:1px solid #E58E8E;padding:10px 16px;list-style:none;line-height:1.6em;width:95%;display:block;line-height:18px;margin:0 0 13px 0;font-weight:bold;}#main .container-internas.contato #list-error li{float:none;width:100%;font-weight:bold;}
+#main .container-internas.buscar ul{list-style:none;margin:0;padding:0;}#main .container-internas.buscar ul li{border-bottom:1px solid #CCC;height:112px;margin:0 0 12px 0;}#main .container-internas.buscar ul li a img{float:left;margin:0 12px 0 0;}
+#main .container-internas.buscar ul li a h2{font-size:14px;color:#000;margin:0;}
+#main .container-internas.buscar ul li span{color:#999;font-size:12px;}
+footer{clear:both;width:100%;height:345px;display:block;background:#343434;color:#e4e4e4;}footer .footerMain{width:980px;margin:0 auto;overflow:hidden;padding:10px 0 0 0;display:block;}footer .footerMain section.esq,footer .footerMain section.meio{float:left;width:295px;margin:0 50px 30px 0;}footer .footerMain section.esq h1,footer .footerMain section.meio h1{color:#e4e4e4;font-size:18px;}
+footer .footerMain section.esq img,footer .footerMain section.meio img{border:5px solid #525252;margin:0 0 8px 0;}
+footer .footerMain section.esq p,footer .footerMain section.meio p{color:#b3b3b3;font-size:12px;margin:0;}
+footer .footerMain section.dir{float:left;width:270px;}footer .footerMain section.dir section h1{color:#e4e4e4;font-size:18px;margin:18px 0;}
+footer .footerMain section.dir section.acompanheNos{margin-bottom:30px;}
+footer .footerMain section.dir section.horarioAtendimento{height:95px;font-size:12px;color:#b3b3b3;background:url('../img/layout/horario.jpg') left 38px no-repeat;}
+footer .footerMain section.dir section p{margin:0;padding:0 0 0 60px;}
+footer .footerMain section.assinature{clear:both;background:url('../img/layout/bg-footer.jpg') left top no-repeat;height:41px;line-height:41px;font-size:12px;color:#858585;text-align:center;display:block;}footer .footerMain section.assinature a{color:#00d8c6;}footer .footerMain section.assinature a:hover{text-decoration:underline;}
+.ButtonRed {
+    height:auto;
+    padding: 15px 0;
+    color:#fff;
+    font-size:18px;
+    text-align:center;
+    font-weight: bold;
+    border-radius:10px;
+    border:1px solid #980021;
+    box-shadow: inset 0 2px 3px 0 rgba(255,255,255,.3), inset 0 -3px 6px 0 rgba(0,0,0,.2), 0 3px 2px 0 rgba(0,0,0,.2);
+    background-image: linear-gradient(to bottom, #cf2b4f, #980021 130%);
+    cursor: pointer;
+    width: 215px;    
+}
