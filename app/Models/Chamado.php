@@ -25,4 +25,14 @@ class Chamado extends Model
     {
         return $this->belongsTo(App\Models\Pedido::class, 'pedidoid', 'id');
     }
+
+    public function scopeJoinPedido($query)
+    {
+        return $query->join('pedido', 'pedido.id', '=', 'chamado.pedidoid');
+    }
+
+    public function scopeJoinCliente($query)
+    {
+        return $query->join('cliente', 'cliente.id', '=', 'chamado.clienteid');
+    }
 }

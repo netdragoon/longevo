@@ -13,38 +13,43 @@ class ChamadosController extends Controller
 
     public function index(Request $request)
     {
-        if ($request->session()->get('status')){
-            return view('chamados.index', array('status' => true));
+        
+        if ($request->session()->get('status')){        
+            $this->setData('status', true);
+            return view('chamados.index', $this->getData());
         }
+
         return view('chamados.index');
+
     }
 
-    public function find(Request $request, Chamado $chamado)
+    public function find(Request $request)
     {
+
         $tipo = (int)$request->get('tipo', 0);
+        
         $value = $request->get('value');
 
-        $result = $chamado->join('pedido', 'pedido.id', '=', 'chamado.pedidoid')
-                          ->join('cliente', 'cliente.id', '=', 'chamado.clienteid');
+        $result = Chamado::joinPedido()
+                         ->joinCliente();
 
         if (isset($tipo) && $tipo !== 0 && isset($value))
         {
             $result = $result->where(($tipo === 2) ? 'cliente.email' : 'chamado.pedidoid', $value);
         }
 
-        $data['model'] = $result
+        $this->setData('model', $result
             ->select('cliente.nome as clientenome', 'pedido.id as pedidoid', 'chamado.titulo', 'cliente.email')
             ->orderBy('chamado.pedidoid')
-            ->paginate(5);
+            ->paginate(5));
 
-        $data['pedido'] = ($tipo === 1) ? $value : '';
-        $data['email'] = ($tipo === 2) ? $value : '';
-        $data['tipo'] = $tipo;
-        $data['value'] = $value;
+        $this->setData('pedido', ($tipo === 1) ? $value : '')
+             ->setData('email', ($tipo === 2) ? $value : '')
+             ->setData('tipo', $tipo)
+             ->setData('value', $value);
 
-        //return $data;
+        return view('chamados.find', $this->getData());
 
-        return view('chamados.find', $data);
     }
 
     public function save(ChamadoRequest $request)
@@ -59,11 +64,16 @@ class ChamadosController extends Controller
 
         if (!$cliente)
         {
-            $cliente = Cliente::create(['nome'=>$nome, 'email'=>$email]);
+            $cliente = Cliente::create([
+                'nome'=>$nome,
+                'email'=>$email
+            ]);
         }
-
-        $cliente->nome = $nome;
-        $cliente->save();
+        else
+        {
+            $cliente->nome = $nome;
+            $cliente->save();
+        }
 
         Chamado::create([
             'titulo' => $titulo,
@@ -73,6 +83,8 @@ class ChamadosController extends Controller
         ]);
 
         $request->session()->flash('status', true);
+        
         return redirect()->route('chamados.index');
+
     }
 }

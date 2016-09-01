@@ -63,12 +63,14 @@
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="">Home</a></li>
+                <li><a href="{{ route('chamados.index') }}">Cadastro de Chamados</a></li>
+                <li><a href="{{ route('chamados.find.get') }}">Pesquisa de Chamados</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Opções <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         <li class="dropdown-header">Complementos</li>
-                        <li><a href="{{ route('chamados.index') }}">Chamados</a></li>
+                        <li><a href="{{ route('chamados.index') }}">Cadastro de Chamados</a></li>
+                        <li><a href="{{ route('chamados.find.get') }}">Pesquisa de Chamados</a></li>
                     </ul>
                 </li>
             </ul>
