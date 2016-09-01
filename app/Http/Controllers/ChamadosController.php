@@ -20,14 +20,12 @@ class ChamadosController extends Controller
         }
 
         return view('chamados.index');
-
     }
 
     public function find(Request $request)
     {
 
-        $tipo = (int)$request->get('tipo', 0);
-        
+        $tipo = (int)$request->get('tipo', 0);        
         $value = $request->get('value');
 
         $result = Chamado::joinPedido()
@@ -46,14 +44,14 @@ class ChamadosController extends Controller
         $this->setData('pedido', ($tipo === 1) ? $value : '')
              ->setData('email', ($tipo === 2) ? $value : '')
              ->setData('tipo', $tipo)
-             ->setData('value', $value);
+             ->setData('value', ($tipo !== 0) ? $value: '');
 
         return view('chamados.find', $this->getData());
-
     }
 
     public function save(ChamadoRequest $request)
     {
+
         $pedido = $request->get('pedido');
         $nome = $request->get('nome');
         $email = $request->get('email');
@@ -85,6 +83,5 @@ class ChamadosController extends Controller
         $request->session()->flash('status', true);
         
         return redirect()->route('chamados.index');
-
     }
 }

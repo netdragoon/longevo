@@ -1,6 +1,6 @@
 @extends('layout._layout')
 @section('content')
-    <form action="/chamados/find" method="get" id="form1" name="form1">
+    <form action="/chamados/find" method="get" id="form1" name="form1" onSubmit="return verify(event);">
         <select name="tipo" id="tipo" class="form-control">
             <option value="">Todos</option>
             <option value="1" @if (isset($tipo) && (int)$tipo===1) {{' selected="selected"'}} @endif>Número do Pedido</option>
@@ -53,5 +53,37 @@
             $("#form1").submit();
         });
     })
+    function verify(e)
+    {
+        var tipo = $("#tipo").val();
+        var num = parseInt(tipo) || 0;        
+        var sts = false;
+        var value = $("#value").val();
+        if (num === 0) 
+        {
+            sts = true;
+        } 
+        else if (num === 1)
+        {
+            sts = isNumeric(value);
+        }
+        else if (num === 2)
+        {
+            sts = isEmail(value)
+        }      
+        if (!sts)
+        {
+            alert('Consulta inválida');
+        }  
+        return sts;
+    }
+    function isNumeric(str) {
+        var er = /^[0-9]+$/;
+        return (er.test(str));
+    }
+    function isEmail(email){
+        var er = /^[a-zA-Z0-9][a-zA-Z0-9\._-]+@([a-zA-Z0-9\._-]+\.)[a-zA-Z-0-9]{2,3}/; 
+        return er.test(email);
+    }
 </script>    
 @stop
