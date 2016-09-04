@@ -19,6 +19,6 @@ class Cliente extends Model
 
     public function chamados()
     {
-        return $this->hasMany(App\Models\Chamados::class , 'clienteid', 'id');
+        return $this->hasMany(Chamado::class , 'clienteid', 'id');
     }
 }

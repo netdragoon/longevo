@@ -13,12 +13,21 @@ class Controller extends BaseController
 
     protected $data = array();
 
+    /**
+     * @param $key
+     * @param $value
+     * @return $this
+     */
     public function setData($key, $value)
     {
         $this->data[$key] = $value;
         return $this;
     }
 
+    /**
+     * @param null $key
+     * @return array|mixed
+     */
     public function getData($key = null)
     {
         if (is_null($key)) {

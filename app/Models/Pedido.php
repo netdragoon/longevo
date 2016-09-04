@@ -18,6 +18,6 @@ class Pedido extends Model
 
     public function chamados()
     {
-        return $this->hasMany(App\Models\Chamados::class , 'pedidoid', 'id');
+        return $this->hasMany(Chamado::class , 'pedidoid', 'id');
     }
 }
