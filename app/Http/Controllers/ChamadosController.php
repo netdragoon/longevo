@@ -6,12 +6,15 @@ use App\Http\Requests;
 use App\Http\Requests\ChamadoRequest;
 use App\Services\ChamadoServices;
 use Illuminate\Http\Request;
+use Illuminate\Mail\Mailable;
+use Illuminate\Mail\Mailer;
+use Illuminate\Support\Facades\Mail;
 
 class ChamadosController extends Controller
 {
-    public function __construct()
+    public function __construct(Request $r)
     {
-
+        $r->getContent(true);
     }
 
     public function index(Request $request)
